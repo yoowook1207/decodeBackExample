@@ -1,11 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { Configuration, OpenAIApi } from 'openai';
-import { Message } from '../utils/interfaces/message.interface';
-import { environment } from '../environment/environment';
 
 @Injectable()
 export class StoryTellerService {
-  apiKey = environment.openaiKey;
+  apiKey = 'please_put_your_openai_api_key';
 
   configuration = new Configuration({
     apiKey: this.apiKey,
